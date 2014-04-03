@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript" src="./js/control.js"></script>
+    <script data-cjsexec=false type="text/cjs" data-cjssrc="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script data-cjsexec=false type="text/cjs" data-cjssrc="http://upcdn.b0.upaiyun.com/libs/modernizr/modernizr-2.7.1.min.js"></script>
+</head>
+<body>
+    <button id="btn">Click</button>
+    <script type="text/javascript">
+        var btn = document.querySelector("#btn");
+        btn.onclick = function() {
+            CJS.execScript("http://code.jquery.com/jquery-1.9.1.min.js");
+            CJS.execScript("http://upcdn.b0.upaiyun.com/libs/modernizr/modernizr-2.7.1.min.js");
+        };
+    </script>
+</body>
+</html>
